@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="id">
+  <head>
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <header class="header-container">
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div id="home" class="jumbotron">
+        <p>Hi everyone 🖐, my name is</p>
+        <h1>Andryan</h1>
+        <p>Welcome to my personal website</strong></p>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        
+        <article id="about">
+          <h1>About Me</h1>
+
+          <div class="main-content">
+            <div class="left-content">
+              <img src="/assets/img/profile.png" alt="My Profile Photo">
+            </div>
+  
+            <div class="right-content">
+              <h1 class="title">Hello, my name is Andryan</h1>
+              
+              <p>I am a bachelor degree in Information System from Bunda Mulia University and
+                I'm passionate and motivated software engineer with a strong
+                interest in mobile development, web development, and machine learning development.</p>
+  
+              <p>Apart from that, i created several portfolios such as <strong>websites, android applications, 
+                and several machine learning model</strong>. All of that portfolio you can see in the portfolio sections below.
+              </p>
+  
+              <button><a href="#portfolio">More Info</a></button>
+            </div>
+          </div>
+        </article>
+
+        <article id="portfolio">
+          <div class="main-content">
+            <h1 class="title">My Portfolio</h1>
+            
+            <div class="carousel">
+              <div class="carousel-item">
+                <h2>My Cafe Website</h2>
+                <img src="/assets/img/my-cafe.png" alt="My Cafe Website">
+                <p>This my cafe website is coffee shop website and connected to
+                  backend, i make this website to promote products & services from
+                  coffee shop.</p>
+              </div>
+  
+              <div class="carousel-item">
+                <h2>Tech Town Website</h2>
+                <img src="/assets/img/techtown.png" alt="Tech Town Website">
+                <p>This tech town website is gadget catalog website and connected to
+                  backend, i make this website to manage gadget products & view
+                  the gadget information.</p>
+              </div>
+  
+              <div class="carousel-item">
+                <h2>Github User App</h2>
+                <img src="/assets/img/github-user.png" alt="Github User App">
+                <p>This githhub user app is android app to view github user information
+                  from github api, i make this app to get the information & detail of github user.</p>
+              </div>
+  
+              <div class="carousel-item">
+                <h2>Movie Catalog App</h2>
+                <img src="/assets/img/movie-catalog.png" alt="Movie Catalog App">
+                <p>This movie catalog app is android app to view the latest movie & tv series 
+                  from tmdb api, i make this app to get the information & detail of movie & tv series.</p>
+              </div>
+  
+              <div class="carousel-item">
+                <h2>Image Classification Model</h2>
+                <img src="/assets/img/image-classification.png" alt="Image Classification Model">
+                <p>This image classification model is my machine learning project, that i created 
+                  to classify rock, paper, and scissors image by using the cnn algorithm in machine learning.
+                </p>
+              </div>
+
+              <a class="previous" onclick="previousPortfolio(1)">&#10094;</a>
+              <a class="next" onclick="nextPortfolio(1)">&#10095;</a>
+
+              <div class="carousel-dots">
+                <span class="carousel-dot" onclick="currentPortfolio(1)"></span>
+                <span class="carousel-dot" onclick="currentPortfolio(2)"></span>
+                <span class="carousel-dot" onclick="currentPortfolio(3)"></span>
+                <span class="carousel-dot" onclick="currentPortfolio(4)"></span>
+                <span class="carousel-dot" onclick="currentPortfolio(5)"></span>
+              </div>
+            </div>
+          </div>
+
+          <aside>
+            <article class="profile card">
+              <header>
+                <h1 class="title">My Profile</h1>
+                <img src="/assets/img/profile.png" alt="Profile Image">
+                <p>Full Name : Andryan</p>
+                <p>Dicoding Username : @andryann</p>
+                <p>Email : andryancoolz@gmail.com</p>
+              </header>
+            </article>
+          </aside>
+        </article>
+
+        <article id="contact">
+          <h1>Contact Me</h1>
+          <div class="main-content">
+            <div class="left-content">
+              <h2>Hi, you can contact me via :</h2>
+
+              <p class="email-container">
+                <img src="/assets/img/envelope.svg" alt="Email Logo">
+                <span style="padding-left: 20px;"> : andryancoolz@gmail.com</span>
+              </p>
+              
+              <p class="whatsapp-container">
+                <img src="/assets/img/whatsapp.svg" alt="Whatsapp Logo">
+                <span style="padding-left: 20px;"> : +62 856 7519 148</span>
+              </p>
+
+              <p class="linkedin-container">
+                <img src="/assets/img/linkedin.svg" alt="Linkedin Logo">
+                <span style="padding-left: 20px;"> : @andryan007</span>
+              </p>
+
+              <p class="instagram-container">
+                <img src="/assets/img/instagram.svg" alt="Instagram Logo">
+                <span style="padding-left: 20px;"> : @andryan.doank</span>
+              </p>
+            </div>
+            <div class="right-content">
+              <img src="/assets/img/contact.png" alt="Contact Illustration">
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>Created by Andryan in 2024</p>
+    </footer>
+
+    <script src="/assets/js/carousel.js"></script>
+  </body>
+</html>
